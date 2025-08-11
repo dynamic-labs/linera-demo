@@ -1,6 +1,6 @@
-## Linera + Dynamic POC
+## Linera + Dynamic Demo
 
-This project is a proof-of-concept demonstrating how to integrate the Linera Web client with Dynamic (wallet auth) in a Next.js app.
+This project is a demo demonstrating how to integrate the Linera Web client with Dynamic (wallet auth) in a Next.js app.
 
 Based on the Linera Web hosted example: [hosted-counter-metamask](https://github.com/linera-io/linera-web/tree/main/examples/hosted-counter-metamask), adapted to use Dynamic and Next.js.
 
@@ -30,8 +30,23 @@ Based on the Linera Web hosted example: [hosted-counter-metamask](https://github
 
 ```bash
 git clone <this-repo>
-cd linera-poc
-git submodule update --init --recursive
+cd linera-demo
+```
+
+### Submodule: linera-protocol
+
+This project depends on `linera-protocol` via a git submodule located at `linera-protocol/`.
+
+- First-time initialization:
+
+```bash
+git submodule init
+```
+
+- Update to the latest upstream version:
+
+```bash
+git submodule update --remote
 ```
 
 2. Provide the Dynamic environment ID
